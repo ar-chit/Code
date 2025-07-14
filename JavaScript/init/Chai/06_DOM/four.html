@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: #212121;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="language">
+    </ul>
+    <script>
+        document.querySelector('ul').style.color = 'white';
+
+        function addList(listContent) {
+            const createElement = document.createElement('li');
+            createElement.appendChild(document.createTextNode(listContent));
+            document.querySelector('.language').append(createElement);
+        }
+        addList('JavaScript');
+        addList('Python');
+        addList('CPP');
+        addList('Ruby');
+
+        //Edit
+        const createLi = document.createElement('li');
+        createLi.textContent = "Java";
+        const firstElement = document.querySelector('li');
+        firstElement.replaceWith(createLi);
+
+        //Edit
+        const secondElement = document.createElement('li');
+        secondElement.append(document.createTextNode('Mojo'));
+        const secondLang = document.querySelector('li:nth-child(2)');
+        secondLang.replaceWith(secondElement);
+
+        //Edit
+        document.querySelector('li:nth-child(3)').outerHTML = '<li>TypeScript</li>';
+    
+        //Edit
+        document.querySelector('li:last-child').innerHTML = 'Golang';
+
+        //remove
+        document.querySelector('li:last-child').remove();
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Kernel.framework/Versions/A/Headers"
+      ],
+      "defines": [],
+      "macFrameworkPath": [
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+      ],
+      "compilerPath": "/usr/bin/clang",
+      "cStandard": "c17",
+      "cppStandard": "c++23",
+      "intelliSenseMode": "macos-clang-arm64",
+      "clangTidy": {
+        "enabled": true,
+        "checks": "*",
+        "args": ["--header-filter=.*", "--warnings-as-errors=*"]
+      }
+    }
+  ],
+  "version": 4
+}

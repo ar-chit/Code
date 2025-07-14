@@ -1,0 +1,107 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "BinarySearchTree",
+      "request": "launch",
+      "mainClass": "BinarySearchTree",
+      "projectName": "Code_80763f9c"
+    },
+    {
+      "type": "java",
+      "name": "BMI",
+      "request": "launch",
+      "mainClass": "BMI",
+      "projectName": "Code_80763f9c"
+    },
+    {
+      "type": "java",
+      "name": "ekospoj",
+      "request": "launch",
+      "mainClass": "ekospoj",
+      "projectName": "Code_80763f9c"
+    },
+    {
+      "type": "java",
+      "name": "Tree",
+      "request": "launch",
+      "mainClass": "Tree",
+      "projectName": "Code_80763f9c"
+    },
+    {
+      "type": "java",
+      "name": "LinkedList",
+      "request": "launch",
+      "mainClass": "LinkedList",
+      "projectName": "Code_80763f9c"
+    },
+    {
+      "type": "java",
+      "name": "array",
+      "request": "launch",
+      "mainClass": "array",
+      "projectName": "Code_80763f9c"
+    },
+    {
+      "type": "java",
+      "name": "recursion",
+      "request": "launch",
+      "mainClass": "recursion",
+      "projectName": "Code_80763f9c"
+    },
+    {
+      "type": "java",
+      "name": "test",
+      "request": "launch",
+      "mainClass": "test",
+      "projectName": "Code_80763f9c"
+    },
+    {
+      "type": "java",
+      "name": "solution",
+      "request": "launch",
+      "mainClass": "solution",
+      "projectName": "Code_80763f9c"
+    },
+    {
+      "name": "C/C++: clang++ build and debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "C/C++: clang++ build active file"
+    },
+    {
+      "name": "C/C++: gcc build and debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "C/C++: gcc build active file"
+    },
+    {
+      "name": "C/C++: g++ build and debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "C/C++: g++ build active file"
+    }
+  ],
+  "version": "2.0.0"
+}
