@@ -26,14 +26,13 @@ const fs = require("fs");
 // });
 
 function asyncReadFile(fileName) {
-  return new Promise((resolve, reject) => {
-    fs.readFile(fileName, "utf8", (err, data) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(data);
-      }
-    });
+  fs.readFile(fileName, "utf8", (err, data) => {
+    if (err) {
+      console.log("ERR!!", err);
+      return Promise.reject(err);
+    } else {
+      return data;
+    }
   });
 }
 
@@ -56,13 +55,13 @@ function asyncReadFile(fileName) {
 
 async function getHaikus() {
   try {
-    const haiku1 = await asyncReadFile("./haiku1.txt");
+    const haiku1 = asyncReadFile("./haiku1.txt");
     console.log("HAIKU 1");
     console.log(haiku1);
-    const haiku2 = await asyncReadFile("./haiku2.txt");
+    const haiku2 = asyncReadFile("./haiku2.txt");
     console.log("HAIKU 2");
     console.log(haiku2);
-    const haiku3 = await asyncReadFile("./haiku3.txt");
+    const haiku3 = asyncReadFile("./haiku3.txt");
     console.log("HAIKU 3");
     console.log(haiku3);
   } catch (e) {

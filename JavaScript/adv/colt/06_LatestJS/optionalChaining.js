@@ -73,3 +73,9 @@ console.log("First name: ", firstName);
 console.log("Longitude: ", long);
 
 user.greet?.();
+
+const archit = {
+  name: "Archit"
+}
+
+console.log(archit.email?.name);

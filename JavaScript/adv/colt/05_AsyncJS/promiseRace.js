@@ -1,7 +1,7 @@
 const BASE_URL = "https://pokeapi.co/api/v2/pokemon";
 
 const lotsOfFetchCalls = [
-  fetch(`http://nope.nope`),
+  fetch(`${BASE_URL}/1`),
   fetch(`${BASE_URL}/2`),
   fetch(`${BASE_URL}/3`),
   fetch(`${BASE_URL}/4`),

@@ -11,4 +11,4 @@ function* getBatchOfImages(images, batchSize = 10) {
   }
 }
 
-const imageGen = getBatchOfImages(allImages);
+const imageGen = getBatchOfImages(allImages); 

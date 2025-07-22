@@ -4,7 +4,11 @@ class Counter {
     this.incrementAmt = incrementAmt;
   }
   start() {
-    setInterval(this.incrementAndPrint.bind(this), 1000);
+    setInterval(function () {
+      console.log("THIS is: ", this);
+      console.log(this.count);
+      this.count += this.incrementAmt;
+    }, 1000);
   }
 
   incrementAndPrint() {
@@ -12,3 +16,6 @@ class Counter {
     this.count += this.incrementAmt;
   }
 }
+
+const counter = new Counter();
+counter.start();

@@ -19,10 +19,13 @@ function* fibonacci() {
   while (true) {
     yield a;
     [a, b] = [b, a + b];
+    console.log(`a: ${a}, b: ${b}`);
   }
 }
 
 const fibGen = fibonacci();
+
+console.log(fibGen.next().value);
 
 for (let i = 0; i < 20; i++) {
   console.log(fibGen.next().value);

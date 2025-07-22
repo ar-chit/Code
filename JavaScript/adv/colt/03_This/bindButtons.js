@@ -8,4 +8,4 @@ const conan = {
 };
 
 const btn = document.querySelector("#clickMe");
-btn.addEventListener("click", conan.sing.bind(conan));
+btn.addEventListener("click", () => conan.sing.call(conan));
