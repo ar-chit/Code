@@ -1,9 +1,10 @@
-function add3(x, y, z) {
-  return x + y + z;
+function add(...args) {
+  return args.reduce((acc, curr) => acc + curr, 0);
 }
 
 function curry(fn) {
   return function curried(...args) {
+    console.log(args.length, fn.length, args);
     if (args.length >= fn.length) {
       return fn.apply(this, args);
     } else {
@@ -14,4 +15,5 @@ function curry(fn) {
   };
 }
 
-const curriedAdd = curry(add3);
+const curriedAdd = curry(add);
+console.log(curriedAdd(1)(2)(3));
